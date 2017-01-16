@@ -14,14 +14,16 @@ LOGDIR = '/tmp/'
 MAXFD = 1024
 
 # Directories to search through and upload (absolute path)
-DIRS_TO_WATCH = []
+DIRS_TO_WATCH = ['Users/slandau/Desktop', 'Users/slandau/bin',
+                 'Users/slandau/Documents', 'Users/slandau/Downloads'
+                 'Users/slandau/Pictures', 'Users/slandau/Movies']
 
 # The main user of the computer
 MAIN_DIR_NAME = 'slandau'
 
 # Where you want the data to be synced to.
 # Ex: pi@xx.yyy.zz.aaa:/home/pi/folder
-BASE_REMOTE_DIR = ''
+BASE_REMOTE_DIR = 'pi@98.113.95.132:/home/pi/Seagate/steven_stuff'
 
 # recursive, update (do not erase newer), preserve permissions, compress while uploading
 RSYNC_COMMANDS = '-rupz'
